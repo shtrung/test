@@ -24,8 +24,13 @@ jobs:
           restore-keys: ${{ runner.os }}-m2-
 
       - name: Run tests with Maven
-        run: mvn clean test
-
+        run: |
+          mvn clean test
+          if [ $? -ne 0 ]; then
+            echo "Tests failed!" >&2
+            exit 1
+          fi
+          
       - name: Upload test reports (опционально)
         uses: actions/upload-artifact@v4
         if: failure()  # Загрузит логи если тесты упали
