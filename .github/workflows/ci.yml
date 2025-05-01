@@ -30,7 +30,7 @@ jobs:
             echo "Tests failed!" >&2
             exit 1
           fi
-          
+
       - name: Upload test reports (опционально)
         uses: actions/upload-artifact@v4
         if: failure()  # Загрузит логи если тесты упали
