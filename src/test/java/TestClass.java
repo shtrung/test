@@ -36,7 +36,7 @@ public class TestClass {
 
     @Test
     public void test5(){
-        assertEquals(0,calculate.multiply(0,0);
+        assertEquals(0,calculate.multiply(0,0));
     }
 
 
