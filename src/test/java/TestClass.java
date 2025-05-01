@@ -39,5 +39,16 @@ public class TestClass {
         assertEquals(0,calculate.multiply(0,0));
     }
 
+    @Test
+    public void test6(){
+        assertEquals(0,calculate.multiply(0,1));
+    }
+
+    @Test
+    public void test7(){
+        assertEquals(0,calculate.multiply(1,0));
+    }
+
+
 
 }

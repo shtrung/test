@@ -3,7 +3,7 @@ package com.shtrung.spring;
 public class Calculate {
 
     public int add(int x, int y) {
-        return x + y;
+        return x + y + 1;
     }
 
     public int multiply(int x, int y) {
