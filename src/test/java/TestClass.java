@@ -29,6 +29,15 @@ public class TestClass {
         assertEquals(0,calculate.add(10,-10));
     }
 
+    @Test
+    public void test4(){
+        assertEquals(4,calculate.multiply(2,2));
+    }
+
+    @Test
+    public void test5(){
+        assertEquals(0,calculate.multiply(0,0));
+    }
 
 
 }
